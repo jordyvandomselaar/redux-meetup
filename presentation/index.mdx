@@ -1,0 +1,212 @@
+import QRCode from "qrcode.react";
+import {Square, SquareItem} from "./Square"
+import {Layout, Fit, Fill, Image, Appear, List, ListItem} from "spectacle";
+
+# Redux
+
+> A Predictable State Container for JS Apps
+
+Jordy van Domselaar
+
+---
+
+# What is Redux?
+
+* Framework agnostic
+* State management tool
+
+![That's all](https://media.giphy.com/media/lD76yTC5zxZPG/giphy.gif)
+
+---
+
+<Layout>
+<Fill>
+
+# Why Redux
+
+* Complex/large state
+* Helps bring structure to your state
+* Plugins
+
+</Fill>
+<Appear>
+<Fill>
+
+# Why not Redux
+
+* Trade-offs
+* Learning curve
+* Additional ecosystem
+
+</Fill>
+</Appear>
+</Layout> 
+
+---
+
+# Should I put all my state in Redux?
+
+---
+
+![no](https://media.giphy.com/media/gnE4FFhtFoLKM/giphy.gif)
+
+---
+
+# What state to put into Redux
+
+* (API) Data
+* App State
+* Data needed across pages
+
+---
+
+# Redux step-by-step
+
+---
+
+# Actions
+
+* Describes what happens
+* Can hold data
+* Dispatched
+
+```javascript
+{
+  type: "ADD_TODO",
+  text: 'Build my first Redux app'
+}
+```
+
+---
+
+# Reducers
+
+* Describes how something happens
+
+```javascript
+import {
+  ADD_TODO,
+} from './actions';
+
+function todoApp(state, action) {
+  switch (action.type) {
+    case ADD_TODO:
+        return {
+            ...state,
+            todos: [
+                ...state.todos,
+                {
+                    text: action.text,
+                    completed: false
+                }
+            ]
+        }
+    default:
+      return state
+  }
+}
+```
+
+---
+
+# Store
+
+* Holds your state
+
+```javascript
+   import { createStore } from 'redux';
+   import todoApp from './reducers';
+   const store = createStore(todoApp);
+```
+
+---
+
+# Example
+
+* Debugger
+
+---
+
+# Tips
+
+<List ordered>
+<Appear><ListItem>Keep your state normalized</ListItem></Appear>
+<Appear><ListItem>Container components</ListItem></Appear>
+<Appear><ListItem>Action creators</ListItem></Appear>
+<Appear><ListItem>Use constants for your action names</ListItem></Appear>
+<Appear><ListItem>Immer</ListItem></Appear>
+</List>
+
+---
+
+# Ecosystem
+
+<List>
+<Appear><ListItem>https://github.com/reduxjs/react-redux</ListItem></Appear>
+<Appear><ListItem>https://github.com/reduxjs/redux-thunk</ListItem></Appear>
+<Appear><ListItem>https://github.com/reduxjs/reselect</ListItem></Appear>
+</List>
+
+---
+
+# FAQ
+
+---
+
+# Can you do this with React Hook `useReducer()`?
+
+---
+
+# Sorta.
+
+* React 16.8
+* Plugin system
+* Pre-defined project structure
+
+---
+
+# Should I convert my current/next project into Redux?
+
+---
+
+# Maybe.
+
+* Are you happy with the way it works right now?
+
+---
+
+# Alternatives
+
+* React Context + `useReducer()`
+* MobX
+* Unstated
+* Apollo Link State (GraphQL 👌)
+
+Pick whichever you like.
+
+---
+
+# Thanks.
+
+<Layout>
+
+<Fill>
+
+https://jordy.app
+
+<QRCode value="https://jordy.app" size={256} />
+
+</Fill>
+<Fill>
+
+`@Jordy_vD_`
+
+<QRCode value="https://twitter.com/Jordy_vD_" size={256} />
+
+</Fill>
+</Layout>   
+
+https://github.com/jordyvandomselaar/react-redux-meetup
+
+<QRCode value="https://github.com/jordyvandomselaar/react-redux-meetup" size={256} />
+
