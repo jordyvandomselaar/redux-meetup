@@ -1,12 +1,36 @@
 import QRCode from "qrcode.react";
 import {Square, SquareItem} from "./Square"
 import {Layout, Fit, Fill, Image, Appear, List, ListItem} from "spectacle";
+import reduxLogo from "../assets/redux-logo-dark.png";
+import jordy from "../assets/jordy.png";
+import dij from "../assets/dij.svg";
+import "./index.css";
 
-# Redux
+<img src={reduxLogo} />
 
 > A Predictable State Container for JS Apps
 
-Jordy van Domselaar
+---
+
+<Layout>
+
+<Fill>
+
+<img className="jordy" src={jordy} />
+
+</Fill>
+
+<Fill>
+
+# About me
+
+Software engineer @ 
+
+<img src={dij} />
+
+</Fill>
+
+</Layout>
 
 ---
 
@@ -25,6 +49,7 @@ Jordy van Domselaar
 # Why Redux
 
 * Complex/large state
+* Single source of truth
 * Helps bring structure to your state
 * Plugins
 
@@ -41,6 +66,14 @@ Jordy van Domselaar
 </Fill>
 </Appear>
 </Layout> 
+
+---
+
+# Why decouple state from your app?
+
+* Re-use state
+* Debugging
+* Pre-fill state
 
 ---
 
@@ -121,12 +154,6 @@ function todoApp(state, action) {
 
 ---
 
-# Example
-
-* Debugger
-
----
-
 # Tips
 
 <List ordered>
@@ -136,6 +163,14 @@ function todoApp(state, action) {
 <Appear><ListItem>Use constants for your action names</ListItem></Appear>
 <Appear><ListItem>Immer</ListItem></Appear>
 </List>
+
+---
+
+# Example
+
+* Debugger
+* Browser extensions
+* Time travel
 
 ---
 
@@ -160,8 +195,7 @@ function todoApp(state, action) {
 # Sorta.
 
 * React 16.8
-* Plugin system
-* Pre-defined project structure
+* Plugins
 
 ---
 
@@ -192,7 +226,7 @@ Pick whichever you like.
 
 <Fill>
 
-https://jordy.app
+[https://jordy.app](https://jordy.app)
 
 <QRCode value="https://jordy.app" size={256} />
 
@@ -206,7 +240,7 @@ https://jordy.app
 </Fill>
 </Layout>   
 
-https://github.com/jordyvandomselaar/react-redux-meetup
+[https://github.com/jordyvandomselaar/redux-meetup](https://github.com/jordyvandomselaar/redux-meetup)
 
-<QRCode value="https://github.com/jordyvandomselaar/react-redux-meetup" size={256} />
+<QRCode value="https://github.com/jordyvandomselaar/redux-meetup" size={256} />
 

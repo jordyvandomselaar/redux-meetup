@@ -1,16 +1,23 @@
 import createTheme from "../../createTheme";
 
 const colors = {
-  primary: "#313A64",
-  secondary: "#12ffc9",
-  tertiary: "#12ffc9",
-  quaternary: "#12ffc9",
-  text: "#12ffc9"
+  primary: "#FFF",
+  secondary: "#303030",
+  tertiary: "#303030",
+  quaternary: "#303030",
+  text: "#303030"
 };
 
 const theme = createTheme(colors, {
-    primary: "Helvetica",
-    secondary: "Helvetica"
+    primary: {
+      name: "Lato",
+      googleFont: true,
+    },
+    secondary: {
+      name: "Lato",
+      googleFont: true,
+      styles: ["Black"]
+    }
   }, {
     progress: {
       pacmanTop: {
