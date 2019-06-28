@@ -81,22 +81,6 @@ Software engineer @
 
 ---
 
-# Should I put all my state in Redux?
-
----
-
-![no](https://media.giphy.com/media/gnE4FFhtFoLKM/giphy.gif)
-
----
-
-# What state to put into Redux
-
-* (API) Data
-* App State
-* Data needed across pages
-
----
-
 # Redux step-by-step
 
 ---
@@ -193,17 +177,6 @@ function todoApp(state, action) {
 
 ---
 
-# Can you do this with React Hook `useReducer()`?
-
----
-
-# Sorta.
-
-* React 16.8
-* Plugins
-
----
-
 # Should I convert my current/next project into Redux?
 
 ---
@@ -212,16 +185,64 @@ function todoApp(state, action) {
 
 * Are you happy with the way it works right now?
 
+
+---
+
+# Should I put all my state in Redux?
+
+---
+
+![no](https://media.giphy.com/media/gnE4FFhtFoLKM/giphy.gif)
+
+---
+
+# What state to put into Redux
+
+* (API) Data
+* App State
+* Data needed across pages
+
 ---
 
 # Alternatives
 
-* React Context + `useReducer()`
-* MobX
-* Unstated
-* Apollo Link State (GraphQL 👌)
+---
 
-Pick whichever you like.
+# React context + `useReducer()`
+
+* Built into React 16.8+
+
+---
+
+# MobX
+
+> Simple, scalable state management.
+
+* Mutable state
+* Observers
+* Computed values
+* Reactions
+
+---
+
+# Unstated
+
+> State so simple, it goes without saying
+
+* Simple AF
+* A global `setState()`
+
+---
+
+# Apollo Link State
+
+> Manage your local data with Apollo Client=
+
+* GraphQL all the things 👌
+
+---
+
+# Pick whichever you like.
 
 ---
 
