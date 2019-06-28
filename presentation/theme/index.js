@@ -60,6 +60,9 @@ const theme = createTheme(colors, {
       link: {
         color: colors.text,
         textDecoration: 'underline'
+      },
+      listItem: {
+        padding: "5px 0"
       }
     }
   });

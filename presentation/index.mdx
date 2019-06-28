@@ -26,9 +26,15 @@ import "./index.css";
 
 # About me
 
+<br />
+
 <div>
 
+Jordy van Domselaar,
+
 Software engineer @ 
+
+<br />
 
 <img src={dij} />
 
@@ -37,55 +43,62 @@ Software engineer @
 </div>
 
 </Fill>
-
 </Layout>
 
 ---
 
 # What is Redux?
 
-* Framework agnostic
-* State management tool
+<List>
+<Appear><ListItem>Framework agnostic</ListItem></Appear>
+<Appear><ListItem>State management tool</ListItem></Appear>
+</List>
+
+<Appear>
+<div>
 
 ![That's all](https://media.giphy.com/media/lD76yTC5zxZPG/giphy.gif)
 
----
+</div>
+</Appear>
 
-<Layout>
-<Fill>
+---
 
 # Why Redux
 
-* Complex/large state
-* Single source of truth
-* Shared state
-* Helps bring structure to your state
-* Plugins (Persisting state to local storage anyone?)
-* Maintainability
-* Testing
+<List>
+<Appear><ListItem>Complex/large state</ListItem></Appear>
+<Appear><ListItem>Single source of truth</ListItem></Appear>
+<Appear><ListItem>Shared state</ListItem></Appear>
+<Appear><ListItem>Helps bring structure to your state</ListItem></Appear>
+<Appear><ListItem>Plugins (Persisting state to local storage anyone?)</ListItem></Appear>
+<Appear><ListItem>Maintainability</ListItem></Appear>
+<Appear><ListItem>Testing</ListItem></Appear>
+</List>
 
-</Fill>
 <Appear>
-<Fill>
+<div>
 
 # Why not Redux
 
-* Trade-offs
-* Learning curve
-* Functional-ish programming
-* Additional ecosystem
-
-</Fill>
+<List>
+<Appear><ListItem>Trade-offs</ListItem></Appear>
+<Appear><ListItem>Learning curve</ListItem></Appear>
+<Appear><ListItem>Functional-ish programming</ListItem></Appear>
+<Appear><ListItem>Additional ecosystem</ListItem></Appear>
+</List>
+</div>
 </Appear>
-</Layout> 
 
 ---
 
 # Why decouple state from your app?
 
-* Re-use state
-* Debugging
-* Pre-fill state
+<List>
+<Appear><ListItem>Re-use state</ListItem></Appear>
+<Appear><ListItem>Debugging</ListItem></Appear>
+<Appear><ListItem>Pre-fill state</ListItem></Appear>
+</List>
 
 ---
 
@@ -95,9 +108,14 @@ Software engineer @
 
 # Actions
 
-* Describes what happens
-* Can hold data
-* Dispatched
+<List>
+<Appear><ListItem>Describes what happens</ListItem></Appear>
+<Appear><ListItem>Can hold data</ListItem></Appear>
+<Appear><ListItem>Dispatched</ListItem></Appear>
+</List>
+
+<Appear>
+<div>
 
 ```javascript
 {
@@ -106,12 +124,20 @@ Software engineer @
 }
 ```
 
+</div>
+</Appear>
+
 ---
 
 # Reducers
 
-* Describes how something happens
-* Pure functions
+<List>
+<Appear><ListItem>Describes how something happens</ListItem></Appear>
+<Appear><ListItem>Pure functions</ListItem></Appear>
+</List>
+
+<Appear>
+<div>
 
 ```javascript
 import {
@@ -137,17 +163,28 @@ function todoApp(state, action) {
 }
 ```
 
+</div>
+</Appear>
+
 ---
 
 # Store
 
-* Holds your state
+<List>
+<Appear><ListItem>Holds your state</ListItem></Appear>
+</List>
+
+<Appear>
+<div>
 
 ```javascript
    import { createStore } from 'redux';
    import todoApp from './reducers';
    const store = createStore(todoApp);
 ```
+
+</div>
+</Appear>
 
 ---
 
@@ -191,8 +228,9 @@ function todoApp(state, action) {
 
 # Maybe.
 
-* Are you happy with the way it works right now?
+<br />
 
+Are you happy with the way it works right now?
 
 ---
 
@@ -206,9 +244,11 @@ function todoApp(state, action) {
 
 # What state to put into Redux
 
-* (API) Data
-* App State
-* Data needed across pages
+<List>
+<Appear><ListItem>(API) Data</ListItem></Appear>
+<Appear><ListItem>App State</ListItem></Appear>
+<Appear><ListItem>Data needed across pages</ListItem></Appear>
+</List>
 
 ---
 
@@ -244,17 +284,19 @@ function todoApp(state, action) {
 
 # Apollo Link State
 
-> Manage your local data with Apollo Client=
+> Manage your local data with Apollo Client
 
 * GraphQL all the things 👌
 
 ---
 
-# Pick whichever you like.
+# Pick whichever works for you, your project, your team.   
 
 ---
 
-# Thanks.
+# Thanks for attending ❤️
+
+<br />
 
 <Layout>
 
@@ -272,7 +314,9 @@ function todoApp(state, action) {
 <QRCode value="https://twitter.com/Jordy_vD_" size={256} />
 
 </Fill>
-</Layout>   
+</Layout>
+
+<br />   
 
 [https://github.com/jordyvandomselaar/redux-meetup](https://github.com/jordyvandomselaar/redux-meetup)
 
