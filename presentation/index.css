@@ -6,9 +6,14 @@ img {
   max-width: 100%;
 }
 
-.jordy {
+.image--rounded {
   max-width: 50%;
-  border-radius: 100%;
+  border-radius: 50%;
+}
+
+.dan {
+  max-height: 300px;
+  padding-top: 20px;
 }
 
 .about-me {

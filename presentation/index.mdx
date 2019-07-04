@@ -1,14 +1,23 @@
 import QRCode from "qrcode.react";
 import {Square, SquareItem} from "./Square"
-import {Layout, Fit, Fill, Image, Appear, List, ListItem} from "spectacle";
+import {Layout, Fit, Fill, Image, Appear, List, ListItem, Notes} from "spectacle";
 import reduxLogo from "../assets/redux-logo-dark.png";
 import jordy from "../assets/jordy.png";
 import dij from "../assets/dij.svg";
+import dan from "../assets/dan.png";
 import "./index.css";
 
 <img src={reduxLogo} />
 
 > A Predictable State Container for JS Apps
+
+<Notes>
+
+* Has anyone heard of Redux before?
+* Has anyone used Redux before?
+* Who's used any state management solution at all?
+
+</Notes>
 
 ---
 
@@ -16,7 +25,7 @@ import "./index.css";
 
 <Fill>
 
-<img className="jordy" src={jordy} />
+<img className="image--rounded" src={jordy} />
 
 </Fill>
 
@@ -47,7 +56,19 @@ Software engineer @
 
 ---
 
+# A little bit of history
+
+<List>
+<Appear><ListItem>The notification problem @ Facebook</ListItem></Appear>
+<Appear><ListItem>Flux</ListItem></Appear>
+<Appear><ListItem>Fluxxor, Reflux, Redux</ListItem></Appear>
+</List>
+
+---
+
 # What is Redux?
+
+<img src={dan} className="image--rounded dan"/>
 
 <List>
 <Appear><ListItem>Framework agnostic</ListItem></Appear>
@@ -200,11 +221,7 @@ function todoApp(state, action) {
 
 ---
 
-# Example
-
-* Debugger
-* Browser extensions
-* Time travel
+# example
 
 ---
 
