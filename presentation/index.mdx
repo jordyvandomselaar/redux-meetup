@@ -5,9 +5,10 @@ import reduxLogo from "../assets/redux-logo-dark.png";
 import jordy from "../assets/jordy.png";
 import dij from "../assets/dij.svg";
 import dan from "../assets/dan.png";
+import theMomentHeKnewHeWasScrewed from "../assets/the-moment-he-knew-he-was-screwed.png";
 import "./index.css";
 
-<img src={reduxLogo} />
+<Image src={reduxLogo} />
 
 > A Predictable State Container for JS Apps
 
@@ -25,7 +26,7 @@ import "./index.css";
 
 <Fill>
 
-<img className="image--rounded" src={jordy} />
+<Image className="image--rounded" src={jordy} />
 
 </Fill>
 
@@ -45,13 +46,19 @@ Software engineer @
 
 <br />
 
-<img src={dij} />
+<Image src={dij} />
 
 </div>
 
 </div>
 
 </Fill>
+</Layout>
+
+---
+
+<Layout>
+<Image src={theMomentHeKnewHeWasScrewed}/>
 </Layout>
 
 ---
@@ -68,12 +75,10 @@ Software engineer @
 
 # What is Redux?
 
-<img src={dan} className="image--rounded dan"/>
+<Image src={dan} className="image--rounded dan"/>
 
-<List>
-<Appear><ListItem>Framework agnostic</ListItem></Appear>
-<Appear><ListItem>State management tool</ListItem></Appear>
-</List>
+* Framework agnostic
+* State management tool
 
 <Appear>
 <div>
@@ -119,6 +124,7 @@ Software engineer @
 <Appear><ListItem>Re-use state</ListItem></Appear>
 <Appear><ListItem>Debugging</ListItem></Appear>
 <Appear><ListItem>Pre-fill state</ListItem></Appear>
+<Appear><ListItem>Seperation of rendering logic from data logic</ListItem></Appear>
 </List>
 
 ---
@@ -230,7 +236,6 @@ function todoApp(state, action) {
 <List>
 <Appear><ListItem>https://github.com/reduxjs/react-redux</ListItem></Appear>
 <Appear><ListItem>https://github.com/reduxjs/redux-thunk</ListItem></Appear>
-<Appear><ListItem>https://github.com/reduxjs/reselect</ListItem></Appear>
 </List>
 
 ---
